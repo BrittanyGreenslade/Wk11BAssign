@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.cocktailContainer {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.ingredMsrmt {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.msmrmt {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+#cocktailBtn {
+  height: 30px;
+  width: 100x;
+  font-size: 20px;
+}
+
+#loading {
+  display: none;
+  font-size: 50px;
+}
+/*# sourceMappingURL=style.css.map */
