@@ -128,6 +128,10 @@ function nextCocktail() {
     document.getElementById("loading").innerHTML = `<h2>Loading...</h2>`;
     document.getElementById("loading").style.display = `block`;
   };
+  //this makes the 'loading' message go away once the new API is loaded
+  ajax.onloadend = function loaded() {
+    document.getElementById("loading").style.display = `none`;
+  };
   //This is how I found to set an error message but it's not possible to see it unless there's
   //an actual error at the network level not just at the app level right or?
   ajax.onerror = function () {
